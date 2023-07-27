@@ -8,3 +8,5 @@ assign requested address) [192.168.122.201:80]
 Normally, you would be correct! But in this case, we're going to set the net.ipv4.ip_nonlocal_bind sysctl to 1:
 
 sysctl -w net.ipv4.ip_nonlocal_bind=1
+
+haproxy -f /etc/haproxy/haproxy.cfg -c
